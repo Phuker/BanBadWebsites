@@ -8,6 +8,17 @@
 // @grant        none
 // ==/UserScript==
 
+/*
+GitHub:
+https://github.com/Phuker/BanBadWebsites
+
+Greasy Fork:
+https://greasyfork.org/zh-CN/scripts/389721
+
+License:
+GNU General Public License v3.0
+*/
+
 (function() {
     'use strict';
 

@@ -1,6 +1,6 @@
 # Ban Bad Websites
 
-[GitHub](https://github.com/Phuker/BanBadWebsites) | [Greasy Fork](https://greasyfork.org/zh-CN/scripts/389721)
+[![GitHub](https://img.shields.io/badge/dynamic/json?label=GitHub&query=%24.stargazers_count&suffix=%20stars&url=https://api.github.com/repos/Phuker/BanBadWebsites&labelColor=282c34&color=181717&logo=github&logoColor=white&style=flat)](https://github.com/Phuker/BanBadWebsites) [![Greasy Fork](https://img.shields.io/badge/dynamic/json?labelColor=%2376150C&color=282c34&label=Greasy%20Fork&query=%24.total_installs&suffix=%20installs&url=https%3A%2F%2Fgreasyfork.org%2Fscripts%2F389721.json)](https://greasyfork.org/zh-CN/scripts/389721)
 
 又一个屏蔽中文世界爬虫、机器翻译等 SEO 垃圾网站的浏览器用户脚本。
 
@@ -24,6 +24,10 @@
 ![default](./screenshots/screenshot1.png)
 
 ## 安装
+
+首先你的浏览器需要安装一个`用户脚本管理器`。如果没有安装，请查看[此帮助](https://greasyfork.org/zh-CN/help/installing-user-scripts)。
+
+点击进入 Greasy Fork 中[此项目的页面](https://greasyfork.org/zh-CN/scripts/389721)，点击`安装此脚本`按钮即可。
 
 ## 设置
 
