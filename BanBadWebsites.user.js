@@ -9,7 +9,10 @@
 // ==/UserScript==
 
 /*
-GitHub:
+Author:
+https://github.com/Phuker/
+
+Project GitHub Repo:
 https://github.com/Phuker/BanBadWebsites
 
 Greasy Fork:
