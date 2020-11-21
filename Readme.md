@@ -2,20 +2,18 @@
 
 [![GitHub](https://img.shields.io/badge/dynamic/json?label=GitHub&query=%24.stargazers_count&suffix=%20stars&url=https://api.github.com/repos/Phuker/BanBadWebsites&labelColor=282c34&color=181717&logo=github&logoColor=white&style=flat)](https://github.com/Phuker/BanBadWebsites) [![Greasy Fork](https://img.shields.io/badge/dynamic/json?labelColor=%2376150C&color=282c34&label=Greasy%20Fork&query=%24.total_installs&suffix=%20installs&url=https%3A%2F%2Fgreasyfork.org%2Fscripts%2F389721.json)](https://greasyfork.org/zh-CN/scripts/389721)
 
-又一个屏蔽中文世界爬虫、机器翻译等 SEO 垃圾网站的浏览器用户脚本。
-
-本项目特色：
-
-- 不是特定网站的针对性脚本，而是处理所有网页的所有 `<a>` 标签超链接。
-- 可以改变超链接外观（颜色、背景色、边框、装饰线等），让用户在点击之前就意识到，哪些链接指向垃圾网站。
+一个屏蔽中文世界垃圾网站的浏览器用户脚本。此脚本会遍历所有的 `<a>` 标签，匹配域名和 `URL` 前缀黑名单，识别指向垃圾网站的超链接。根据用户配置，可以高亮标记/屏蔽/删除识别出的超链接。
 
 垃圾网站黑名单类型：
 
-- SEO 爬虫采集站，例如爬 Stack Overflow 并进行机器翻译的网站
+- 机器翻译爬虫采集站、[内容农场](https://zh.wikipedia.org/zh-cn/%E5%85%A7%E5%AE%B9%E8%BE%B2%E5%A0%B4)、SEO 垃圾站群，例如爬 Stack Overflow 并进行机器翻译的网站
 - 博彩网站，被搜索引擎搜到时看起来是正常网站，点击后进入博彩网站
 - 低质量博客、下载站
 
-此脚本会遍历所有的 `<a>` 标签，匹配域名和 `URL` 前缀黑名单，识别指向垃圾网站的超链接。根据用户配置，可以高亮标记/屏蔽/删除识别出的超链接。
+本项目特色：
+
+- 不是特定网站的针对性脚本，而是处理所有网页的所有 `<a>` 标签超链接
+- 可以改变超链接外观（颜色、背景色、边框、装饰线等），让用户在点击之前就意识到，哪些链接指向垃圾网站
 
 ## 效果
 
