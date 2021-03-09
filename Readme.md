@@ -19,7 +19,7 @@
 
 默认设置：
 
-![default](./screenshots/screenshot1.png)
+![screenshot1.png](https://raw.githubusercontent.com/Phuker/BanBadWebsites/main/screenshots/screenshot1.png)
 
 ## 安装
 
