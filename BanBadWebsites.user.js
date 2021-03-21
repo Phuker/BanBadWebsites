@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Ban Bad Websites 标记/屏蔽机器翻译 SEO 垃圾网站
 // @namespace    https://greasyfork.org/zh-CN/scripts/389721-ban-bad-websites
-// @version      0.4.16
+// @version      0.4.17
 // @description  标记/禁用垃圾网站链接。主要针对机器翻译 Stack overflow 等 SEO 垃圾网站。
 // @author       Phuker
 // @match        *://*/*
@@ -210,6 +210,28 @@ GNU General Public License v3.0
             'sov5.cn',
             'manongjc.com',
             'javaer101.com',
+            'debugger.wiki',
+            'zhihesj.com',
+            'wiwiku.com',
+            'chowdera.com',
+            'javahlw.com',
+            'iter01.com',
+            'icode9.com',
+            'yunjuu.com',
+            'jiucenglou.cn',
+            'aspxhtml.com',
+            'dtmao.cc',
+            'zhishibo.com',
+            'mashen.zone',
+            'wyxbc.com',
+            'taodudu.cc',
+            'soolco.com',
+            'allocmem.com',
+            'itxueyuan.com',
+            'itsharecircle.com',
+            'jquery.online',
+            'wangt.cc',
+            'likecs.com',
         ],
         '博彩垃圾网站': [
             'ceptchina.com',
