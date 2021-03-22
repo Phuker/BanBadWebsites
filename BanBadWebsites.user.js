@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Ban Bad Websites 标记/屏蔽机器翻译 SEO 垃圾网站
+// @name         Ban Bad Websites 标记/屏蔽采集站内容农场机器翻译 SEO 垃圾网站
 // @namespace    https://greasyfork.org/zh-CN/scripts/389721-ban-bad-websites
-// @version      0.4.17
-// @description  标记/禁用垃圾网站链接。主要针对机器翻译 Stack overflow 等 SEO 垃圾网站。
+// @version      0.4.18
+// @description  标记/禁用垃圾网站链接。主要针对机器翻译 Stack Overflow，爬虫采集站内容农场等 SEO 垃圾网站。
 // @author       Phuker
 // @match        *://*/*
 // @grant        none
@@ -232,6 +232,12 @@ GNU General Public License v3.0
             'jquery.online',
             'wangt.cc',
             'likecs.com',
+            'cdmana.com',
+            'admin5.com',
+            'fajicy.com',
+            'gan-ren.com',
+            'zoukankan.com',
+            'ddeevv.com',
         ],
         '博彩垃圾网站': [
             'ceptchina.com',
