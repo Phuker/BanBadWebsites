@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Ban Bad Websites 标记/屏蔽机器翻译 SEO 垃圾网站
 // @namespace    https://greasyfork.org/zh-CN/scripts/389721-ban-bad-websites
-// @version      0.4.27
+// @version      0.4.28
 // @description  标记/禁用垃圾网站链接。主要针对机器翻译 Stack Overflow，爬虫采集站内容农场等 SEO 垃圾网站。
 // @author       Phuker
 // @match        *://*/*
@@ -324,6 +324,13 @@ GNU General Public License v3.0
             'codeantenna.com',
             'yisoge.com',
             'its404.com',
+            'xbfhb.com',
+            'lehuotuan.com',
+            'lsbin.com',
+            '361shipin.com',
+            'ngui.cc',
+            'idushu.com',
+            'betheme.net',
         ],
         '博彩垃圾网站': [
             'ceptchina.com',
