@@ -22,7 +22,7 @@ License:
 GNU General Public License v3.0
 */
 
-(function() {
+(function () {
     'use strict';
 
     // - - - - - - - - - - Start User Config - - - - - - - - - -
@@ -396,82 +396,82 @@ GNU General Public License v3.0
             'https://help.aliyun.com/wordpower/',
         ],
     }
-    
+
 
     var cursor_img = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABj1BMVEX4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT4BlT////D56oEAAAAg3RSTlMAROOgDAAAAAyg40QARNX/+44LAACO+9VE4/////2QCwD//+Og+////5AK+6AMjv38k44MAAv//wD////8Cv+TCgAA/5MKAAAAAAALkP/8kAsAAAALkP3///2QCwAMjv3/jgyg+/////ug4////+NE1f/7jo77/9VEAETjoAwMoONEAJyONeEAAAABYktHRIRi0FpxAAAAB3RJTUUH4wEJAyMIrljkvAAAAOhJREFUGNNjYGBkYmZhZWNnZ2Pl4OTi5mHg5eMXEBQSFhERFhIV4xeXYJCUkpaRlZNXUJCXk5VRVFJmUFFVU9eQ1dTS0pTVUJfR1mHQ1dPXUNcwMDQ0AFKyRsYMJqZyQCkzc3MzIF9OiJXBQlhe08DM0srK0tpGU17YgoFdRMHW0NyqudnKzt7B0YkdScDZxdXN3YPB08vbB6LF188/IDCIITgkNAxiaHhEZFR0DENsXHwC1FqgSGISQ3JKahrMYeHpGZkMWdk5CKfn5OYx5BcUFhVDPFdSWlZewVBZVV1TC/F+XX1DYxMA6lI04KQBZEYAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDEtMDlUMDM6MzU6MDgrMDg6MDDq0TSKAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTAxLTA5VDAzOjM1OjA4KzA4OjAwm4yMNgAAAEN0RVh0c29mdHdhcmUAL3Vzci9sb2NhbC9pbWFnZW1hZ2ljay9zaGFyZS9kb2MvSW1hZ2VNYWdpY2stNy8vaW5kZXguaHRtbL21eQoAAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAYdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADUxMo+NU4EAAAAXdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgANTEyHHwD3AAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNTQ2OTc2MTA4Y0VIZwAAABF0RVh0VGh1bWI6OlNpemUANjcyN0L99mrAAAAAYnRFWHRUaHVtYjo6VVJJAGZpbGU6Ly8vaG9tZS93d3dyb290L25ld3NpdGUvd3d3LmVhc3lpY29uLm5ldC9jZG4taW1nLmVhc3lpY29uLmNuL2ZpbGVzLzExNy8xMTc1NzQ5LnBuZ54B8P8AAAAASUVORK5CYII=';
 
     // modified from PAC
     function dnsDomainIs(host, domain) {
-        if(domain[0] === '.'){
+        if (domain[0] === '.') {
             domain = domain.substr(1);
         }
         var idx = host.length - domain.length;
         return (host === domain) || (idx > 0 && host.lastIndexOf('.' + domain) == idx - 1);
     }
 
-    function ban_link(link, type){
-        if(link.hasAttribute('phuker-banned')){
+    function ban_link(link, type) {
+        if (link.hasAttribute('phuker-banned')) {
             return
         } else {
             link.setAttribute('phuker-banned', 'yes');
             console.log('Ban Bad Website: ' + link.href + ' - ' + type);
         }
-        
-        if(option_highlight_link){
+
+        if (option_highlight_link) {
             link.setAttribute('title', type);
             link.style.cursor = 'url(' + cursor_img + '), not-allowed';
-            if(option_highlight_link_color){
+            if (option_highlight_link_color) {
                 link.style['color'] = option_highlight_link_color;
             }
-            if(option_highlight_link_background_color){
+            if (option_highlight_link_background_color) {
                 link.style['background-color'] = option_highlight_link_background_color;
             }
-            if(option_highlight_link_border){
+            if (option_highlight_link_border) {
                 link.style['border'] = option_highlight_link_border;
             }
-            if(option_highlight_text_decoration){
+            if (option_highlight_text_decoration) {
                 link.style['textDecoration'] = option_highlight_text_decoration;
             }
         }
 
-        if(option_disable_link){
+        if (option_disable_link) {
             link.style['pointerEvents'] = 'none';
-            if(!option_highlight_text_decoration){
+            if (!option_highlight_text_decoration) {
                 link.style['textDecoration'] = 'none';
             }
         }
 
-        if(option_remove_link){
+        if (option_remove_link) {
             link.style['display'] = 'none';
         }
     }
 
-    function process(link){
-        for(let type in hosts){
+    function process(link) {
+        for (let type in hosts) {
             var h = hosts[type];
-            for(let i = 0; i < h.length; i++){
-                if(dnsDomainIs(link.hostname, h[i])){
+            for (let i = 0; i < h.length; i++) {
+                if (dnsDomainIs(link.hostname, h[i])) {
                     ban_link(link, type)
-                    return 
-                }        
+                    return
+                }
             }
         }
-        for(let type in urls){
+        for (let type in urls) {
             var u = urls[type];
-            for(let i = 0; i < u.length; i++){
-                if(link.href.startsWith(u[i])){
+            for (let i = 0; i < u.length; i++) {
+                if (link.href.startsWith(u[i])) {
                     ban_link(link, type)
-                    return 
-                }        
+                    return
+                }
             }
         }
     }
 
-    function ban_bad_websites(){
+    function ban_bad_websites() {
         var links = document.getElementsByTagName('a');
-        for(var i = 0; i < links.length; i++){
+        for (var i = 0; i < links.length; i++) {
             let link = links[i];
-            if(!link.hasAttribute('phuker-banned')){
+            if (!link.hasAttribute('phuker-banned')) {
                 process(link);
             }
         }
